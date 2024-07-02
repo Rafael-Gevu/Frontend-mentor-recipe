@@ -1,0 +1,8 @@
+@media (max-width: 740px){
+    main {
+        width: 90%;
+    }
+    .recipe .menu .image-omelette {
+        padding: 0;
+    }
+}

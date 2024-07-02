@@ -1,0 +1,202 @@
+body {
+    background-color: var(--neutral-hiper-soft);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@font-face {
+    font-family: 'titles';
+    src: url(../fonts/YoungSerif-Regular.ttf);
+}
+    @font-face {
+    font-family: 'text';
+    src: url(../fonts/Outfit-VariableFont_wght.ttf);
+}
+main {
+    width: 750px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+}
+
+
+.recipe{
+    padding: 40px;
+}
+.recipe .menu .image-omelette {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+.recipe .menu .title {
+    margin: 30px 0px 30px;
+    font-family: 'titles';
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--neutral-dark)
+}
+
+.recipe .menu .description {
+    margin: 30px 0px 30px;
+    font-family: 'text';
+    line-height: 20px;
+    width: 100%;
+    color: var(--neutral-medium);
+}
+.recipe .prep-time {
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--primary-soft);
+    padding: 30px;
+    font-family: 'text';
+}
+.recipe .prep-time .title {
+    color: var(--primary-dark);
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+.recipe .prep-time .list {
+    list-style-type: disc;
+    color: var(--neutral-medium);
+    padding-left: 20px;
+    font-size: 16px;
+}
+.recipe .prep-time .list li {
+    margin: 0px 10px 10px;
+}
+.recipe .prep-time .list li span {
+    font-weight: 600;
+    padding-left: 20px;
+}
+.recipe .prep-time .list li::marker {
+    color: var(--primary-dark);
+}
+.recipe .ingredients {
+    margin: 30px 0 30px;
+    font-family: 'titles';
+    font-weight: 300;
+    color: var(--primary-medium);
+}
+.recipe .ingredients-list {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+}
+.recipe .ingredients-list li{
+    font-family: 'text';
+    list-style-type: disc;
+    margin: 0px 10px 10px 15px;
+    padding-left: 20px;
+    color: var(--neutral-medium);
+
+}
+.recipe .ingredients-list li::marker {
+    color: var(--primary-medium);
+}
+.recipe .instructions {
+    margin: 30px 0 30px;
+    font-family: 'titles';
+    font-weight: 300;
+    color: var(--primary-medium);
+}
+.recipe .instructions-list {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+}
+.recipe .instructions-list li{
+    font-family: 'text';
+    margin: 0px 10px 10px 15px;
+    padding-left: 20px;
+    color: var(--neutral-medium);
+}
+.recipe .instructions-list li span{
+    font-weight: 800;
+}
+
+
+
+
+.recipe .instructions-list li::marker {
+    color: var(--primary-medium);
+
+}
+.recipe .nutrition {
+    margin: 30px 0 30px;
+    font-family: 'titles';
+    font-weight: 300;
+    color: var(--primary-medium);
+}
+
+.recipe .nutrition-description {
+    font-family: 'text';
+    color: var(--neutral-medium);
+}
+.recipe .nutrition-table {
+    font-family: 'text';
+    color: var(--neutral-medium);
+    margin: 15px 0 30px;
+    display: grid;
+    grid:  "item1 value1"
+           "item2 value2"
+           "item3 value3"
+           "item4 value4" ;
+    grid-template-rows: repeat(4, 50px);       
+}
+
+.item1{
+    padding-top: 14px;
+    padding-left: 30px;
+    grid-area: item1;
+    border-bottom: 1px solid #ccc;
+}
+.item2{
+    padding-left: 30px;
+    margin-top: 14px;
+    grid-area: item2;
+    border-bottom: 1px solid #ccc;
+}
+.item3{
+    padding-left: 30px;
+    margin-top: 14px;
+    grid-area: item3;
+    border-bottom: 1px solid #ccc;
+}
+.item4{
+    padding-left: 30px;
+    margin-top: 14px;
+    grid-area: item4;
+}
+.value1 {
+    padding-top: 14px;
+    grid-area: value1;
+    border-bottom: 1px solid #ccc;
+    color: var(--primary-medium);
+    font-weight: 600;
+}
+.value2 {
+    margin-top: 14px;
+    grid-area: value2;
+    border-bottom: 1px solid #ccc;
+    color: var(--primary-medium);
+    font-weight: 600;
+}
+.value3 {
+    margin-top: 14px;
+    grid-area: value3;
+    border-bottom: 1px solid #ccc;
+    color: var(--primary-medium);
+    font-weight: 600;
+}
+.value4 {
+    margin-top: 14px;
+    grid-area: value4;
+    color: var(--primary-medium);
+    
+}
